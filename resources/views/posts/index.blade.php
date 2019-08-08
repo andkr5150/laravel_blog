@@ -19,7 +19,7 @@
                 <div class="card-body">
                     <div class="card-img" style="background-image: url({{ $post->img ?? asset('img/default.jpg') }})"></div>
                     <div class="card-author">Author: {{ $post->name }}</div>
-                    <a href="#" class="btn btn-outline-primary">view post</a>
+                    <a href="{{ route('post.show', ['id' => $post->post_id]) }}" class="btn btn-outline-primary">view post</a>
                 </div>
             </div>
         </div>
