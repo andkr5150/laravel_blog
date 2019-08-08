@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.layout', ['title' => 'Main page'])
 
 @section('content')
     @if(isset($_GET['search']))
